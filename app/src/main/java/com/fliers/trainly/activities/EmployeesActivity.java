@@ -11,6 +11,13 @@ import android.widget.ImageView;
 import com.fliers.trainly.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+/**
+* Manage Employees Page
+* A page for Companies to remove their employees, or continue with adding one.
+* @author Erkin Aydın
+* @version 03.05.2021
+*/
+
 public class EmployeesActivity extends AppCompatActivity {
 
     private ImageView back;
