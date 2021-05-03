@@ -19,6 +19,13 @@ import com.fliers.trainly.models.User;
 
 import java.util.ArrayList;
 
+
+/**
+* Add Employee Page
+* A page for Companies to add Employees to the train whichs id is chosen in the page
+* @author Erkin Aydın
+* @version 03.05.2021
+*/
 public class AddEmployeeActivity extends AppCompatActivity {
 
     Company currentUser;
