@@ -19,6 +19,12 @@ import com.fliers.trainly.models.User;
 
 import java.util.ArrayList;
 
+/**
+* Add Train Page
+* A page for Companies to add Train to their collection with desired business-economy wagons and desired prices
+* @author Erkin Aydın
+* @version 03.05.2021
+*/
 public class AddTrainActivity extends AppCompatActivity {
 
     Company currentUser;
