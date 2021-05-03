@@ -19,11 +19,12 @@ import com.fliers.trainly.models.User;
  * Buy Ticket Page
  * A page where customer can buy the ticket s/he selected with his card number, its expiration date
  * and CVV
- * @author Erkin Aydın
+ * @author Erkin Aydın, Ali Emir Güzey
  * @version 03.05.2021
  */
 public class BuyTicketActivity extends AppCompatActivity {
 
+    //Variables
     Customer currentUser;
     ImageView back;
     Button buy;
