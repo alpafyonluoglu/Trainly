@@ -25,6 +25,13 @@ import com.fliers.trainly.models.User;
 
 //import javax.swing.text.View;
 
+/**
+* Manage Lines Page
+* A page for Companies to manage their lines. They can see current lines and add new ones.
+* @author Erkin Aydın
+* @version 03.05.2021
+*/
+
 public class LinesActivity extends AppCompatActivity implements LinesCoordinatesActivity.CoordinatesActivityListener{
 
     private final String LOGGED_IN_USER_TYPE = "loggedInUserType";
@@ -40,26 +47,14 @@ public class LinesActivity extends AppCompatActivity implements LinesCoordinates
     private double x2;
     private double y2;
     private Button button;
-    private SharedPreferences preferences;
-    private int loginType;
     private ImageView back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lines);
-
-        preferences = getSharedPreferences( String.valueOf( R.string.app_name), Context.MODE_PRIVATE);
-        loginType = preferences.getInt( LOGGED_IN_USER_TYPE, NO_LOGIN);
-
-//        if ( loginType == COMPANY_LOGIN) {
-            currentUser = (Company) User.getCurrentUserInstance();
-//        }
-//        else if ( loginType == CUSTOMER_LOGIN) {
-//            currentUser = (Customer) User.getCurrentUserInstance();
-//        }
-
-
+        
+        currentUser = (Company) User.getCurrentUserInstance();
         editTextTextPersonName2 = (EditText) findViewById(R.id.editTextTextPersonName2);
         editTextTextPersonName3 = (EditText) findViewById(R.id.editTextTextPersonName3);
         button = (Button) findViewById(R.id.button);
